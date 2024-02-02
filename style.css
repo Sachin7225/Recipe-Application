@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: rgb(59, 40, 40);
+}
+
+#container {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px 20px;
+    place-items: center;
+}
+
+.recipe {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 350px;
+
+}
+
+.recipe img {
+    height: 300px;
+}
+
+.recipe h3 {
+    font-size: 24px;
+}
+
+.recipe p {
+    font-size: 21px;
+    color: rgb(60, 80, 80);
+}
+
+button {
+    background-color: orange;
+    color: white;
+    margin: 18px auto;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+}
+
+.recipe_details {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    overflow: scroll;
+    color: white;
+    background-color: rgb(123, 88, 88);
+    border-radius: 10px;
+    width: 60%;
+    height: 60%;
+
+
+}
+
+#recide_btn {
+    padding: 12px;
+    position: relative;
+    left: 80%;
+
+
+
+}
+
+span {
+    font-weight: bolder;
+}
+
+li {
+    font-size: 18px;
+}
+
+.heading {
+    text-align: center;
+}
+h1{
+    color: white;
+}
+
+@media screen and (max-width: 480px) {
+    .recipe_details {
+        width: 100%;
+
+
+
+    }
+
+    #recide_btn {
+
+        position: relative;
+        left: 100%;
+
+
+
+    }
+}
